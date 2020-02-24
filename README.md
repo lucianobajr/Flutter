@@ -30,4 +30,8 @@ Para rodar o app utilize :
 
         flutter run
 
+Para atualizar packages da aplicação utilize:
+
+        flutter packages get
+
 <p>
