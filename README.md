@@ -10,7 +10,7 @@ install android studio
 
         sudo snap install android-studio --classic
 
-install FLutter
+install Flutter
 
         https://flutter.dev/docs/get-started/install/linux
 
@@ -18,7 +18,7 @@ Verificação para Flutter
 
         flutter doctor
 
-Para utilizar o FLutter lembre de executar o comando a seguir na pasta /flutter:
+Para utilizar o Flutter lembre de executar o comando a seguir na pasta /flutter:
 
         echo 'export PATH="$PATH:`pwd`/flutter/bin"' >> ~/.profile
 
