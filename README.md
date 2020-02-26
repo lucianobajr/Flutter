@@ -7,6 +7,9 @@
 
 </p>
 
+
+<h2>Diretórios</h2>
+
 <li>Dart</li>
 
 <p align="center">
@@ -42,7 +45,7 @@
 
 </p>
 
-<li>Instalação Flutter e Utililátios</li>
+<h2><stronger>Instalação Flutter e Utililátios</stronger></h2>
 <p align="center">
 
 install KVM
