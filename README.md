@@ -11,15 +11,8 @@
 
 <p align="center">
 
-        Diretório sobre a sintaxe do Dart,possui contéudos des de controle de fluxo passando por Orientação a Objetos até Estrutura de Dados.
-
-</p>
-
-<li>Dart</li>
-
-<p align="center">
-
-        Diretório sobre a sintaxe do Dart,possui contéudos des de controle de fluxo passando por Orientação a Objetos até Estrutura de Dados.
+                   Diretório sobre a sintaxe do Dart,possui contéudos des de controle de
+                      fluxo passando por Orientação a Objetos até Estrutura de Dados.
 
 </p>
 
@@ -27,7 +20,7 @@
 
 <p align="center">
 
-        Diretório sobre conceitos básicos do Flutter como Pilha de Widgets.
+                    Diretório sobre conceitos básicos do Flutter como Pilha de Widgets.
 
 </p>
 
@@ -35,7 +28,9 @@
 
 <p align="center">
 
-        Diretório sobre a estrutura básica do material design utilizando os concetios de 'Scaffold' implementando AppBar ,BottomNavigationBar e FloatingActionButton.
+                   Diretório sobre a estrutura básica do material design utilizando os
+                   concetios de 'Scaffold' implementando AppBar ,BottomNavigationBar e
+                                        FloatingActionButton.
 
 </p>
 
@@ -43,10 +38,11 @@
 
 <p align="center">
 
-       App implementado com o objetivo de aprender conceitos sobre 'Stateful'.
+                    App implementado com o objetivo de aprender conceitos sobre 'Stateful'.
 
 </p>
 
+<li>Instalação Flutter e Utililátios</li>
 <p align="center">
 
 install KVM
