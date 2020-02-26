@@ -2,6 +2,53 @@
 
 <p align="center">
 
+                    Este Repositório tem como objetivo os estudos do framework Flutter
+                                   utilizando a linguagem Dart.               
+
+</p>
+
+<li>Dart</li>
+
+<p align="center">
+
+        Diretório sobre a sintaxe do Dart,possui contéudos des de controle de fluxo passando por Orientação a Objetos até Estrutura de Dados.
+
+</p>
+
+<li>Dart</li>
+
+<p align="center">
+
+        Diretório sobre a sintaxe do Dart,possui contéudos des de controle de fluxo passando por Orientação a Objetos até Estrutura de Dados.
+
+</p>
+
+<li>introduction</li>
+
+<p align="center">
+
+        Diretório sobre conceitos básicos do Flutter como Pilha de Widgets.
+
+</p>
+
+<li>andaime_scaffold</li>
+
+<p align="center">
+
+        Diretório sobre a estrutura básica do material design utilizando os concetios de 'Scaffold' implementando AppBar ,BottomNavigationBar e FloatingActionButton.
+
+</p>
+
+<li>magnata</li>
+
+<p align="center">
+
+       App implementado com o objetivo de aprender conceitos sobre 'Stateful'.
+
+</p>
+
+<p align="center">
+
 install KVM
 
         sudo apt-get -y install libvirt-daemon libosinfo-bin libguestfs-tools libvirt-daemon-system qemu-kvm virtinst bridge-utils virt-top
@@ -35,3 +82,5 @@ Para atualizar packages da aplicação utilize:
         flutter packages get
 
 <p>
+
+
