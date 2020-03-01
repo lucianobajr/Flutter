@@ -11,7 +11,7 @@ class _HomeState extends State<Home> {
   final TextEditingController _alturaControl = new TextEditingController();
   final TextEditingController _pesoControl = new TextEditingController();
   double resultado = 0.0;
-  String _resultadoFinal = "";
+  String _resultadoFinal = "Indefinido";
 
   void _calcularIMC(){
     setState(() {
@@ -22,7 +22,31 @@ class _HomeState extends State<Home> {
       if((_idadeControl.text.isNotEmpty) ||idade>0 && 
       (_alturaControl.text.isNotEmpty)&&
       (_pesoControl.text.isNotEmpty)|| peso > 0){
+
+
         resultado = peso/(altura*altura);
+        if(double.parse(resultado.toStringAsFixed(1))<18.5){
+          _resultadoFinal = "Magreza";
+        }
+        
+        else if(double.parse(resultado.toStringAsFixed(1))>18.5 && 
+        double.parse(resultado.toStringAsFixed(1))<24.9){
+          _resultadoFinal = "Normal";
+        }
+        
+        else if(double.parse(resultado.toStringAsFixed(1))>25 && 
+        double.parse(resultado.toStringAsFixed(1))<29.9){
+          _resultadoFinal = "Sobrepeso";
+        }
+        
+        else if(double.parse(resultado.toStringAsFixed(1))>30 && 
+        double.parse(resultado.toStringAsFixed(1))<39.9){
+          _resultadoFinal = "Obesidade I";
+        }
+        
+        else if(double.parse(resultado.toStringAsFixed(1))>40){
+          _resultadoFinal = "Obesidade II";
+        }
       }
     });
   }
@@ -41,8 +65,8 @@ class _HomeState extends State<Home> {
           children: <Widget>[
             SizedBox(height: 10),
             Container(
-              height: 120,
-              width: 120,
+              height: 260,
+              width: 260,
               decoration: BoxDecoration(
 	                image: DecorationImage(
 	                  image: AssetImage("assets/imc-calculator.png",),
@@ -53,10 +77,22 @@ class _HomeState extends State<Home> {
                 children: <Widget>[
                       Positioned(
 	                    child: Container(
+	                      margin: EdgeInsets.only(bottom: 117),
+	                      child: Center(
+	                        child: Text("$_resultadoFinal", style:
+                          TextStyle(color:Color.fromARGB(200, 204, 41, 68) ,
+                          fontStyle: FontStyle.italic, 
+                          fontSize: 19.1, fontWeight: FontWeight.bold),),
+	                      ),
+	                    ),),
+                      Positioned(
+	                    child: Container(
 	                      margin: EdgeInsets.only(bottom: 75),
 	                      child: Center(
-	                        child: Text("Normal", style: TextStyle(color: Colors.black, 
-                          fontSize: 20, fontWeight: FontWeight.bold),),
+	                        child: Text("${resultado.toStringAsPrecision(3)}", style:
+                          TextStyle(color: Color.fromARGB(255, 230, 172, 182),
+                          fontStyle: FontStyle.italic, 
+                          fontSize: 15, fontWeight: FontWeight.bold),),
 	                      ),
 	                    ),)
                 ],
@@ -179,7 +215,7 @@ class _HomeState extends State<Home> {
                         Container(
                           alignment: Alignment.center,
                           child: RaisedButton(
-                            onPressed: () => null,
+                            onPressed: () =>_calcularIMC(),
                             color: Color.fromARGB(200, 204, 41, 68),
                             child: Text('Calcular'),
                             textColor: Colors.white,
