@@ -1,4 +1,4 @@
-package com.example.shared_preferences
+package com.example.shared
 
 import androidx.annotation.NonNull;
 import io.flutter.embedding.android.FlutterActivity

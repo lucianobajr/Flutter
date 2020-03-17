@@ -1,4 +1,4 @@
-# shared_preferences
+# shared
 
 A new Flutter project.
 
