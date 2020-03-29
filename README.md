@@ -96,7 +96,7 @@
                        Diretório sobre conceitos de api e análise de json 
 </p>
 
-<li<a href="https://github.com/lucianobajr/Flutter/tree/master/terremoto">terremoto</a></li>
+<li><a href="https://github.com/lucianobajr/Flutter/tree/master/terremoto">terremoto</a></li>
 <p align="center">
 
                       Aplicativo de terremotos em tempo real juntamente com sua escala Richter. 
